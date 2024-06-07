@@ -18,3 +18,6 @@ const connection = mysql.createConnection({
 app.get('/ping', (req, res) => {
     res.send('pong')
 })
+
+
+app.post('/create/')
