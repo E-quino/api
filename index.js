@@ -20,4 +20,70 @@ app.get('/ping', (req, res) => {
 })
 
 
-app.post('/create/')
+
+// USUARIO ENDPOINTS (login)
+
+app.post('/', (req, res) =>{
+
+})
+
+
+// ATLETA ENDPOINTS
+
+app.post('/', (req, res) =>{
+
+})
+
+
+// CAVALO ENDPOINTS
+
+app.post('/', (req, res) =>{
+
+})
+
+
+// ENTIDADE ENDPOINTS
+
+app.post('/', (req, res) =>{
+
+})
+
+
+// INSCRICAO ENDPOINTS
+
+app.post('/', (req, res) =>{
+
+})
+
+
+// EVENTO ENDPOINTS
+
+app.post('/', (req, res) =>{
+
+})
+
+
+// DIA ENDPOINTS
+
+app.post('/', (req, res) =>{
+
+})
+
+
+// ALTURA ENDPOINTS
+
+app.post('/', (req, res) =>{
+
+})
+
+
+
+// CATEGORIA ENDPOINTS
+
+app.post('/', (req, res) =>{
+
+})
+
+
+
+
