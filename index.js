@@ -30,49 +30,71 @@ app.post('/', (req, res) =>{
 
 // ATLETA ENDPOINTS
 
-app.post('/', (req, res) =>{
+app.post('/atleta', (req, res) =>{
+
+    let id =  undefined;
+    let userID = undefined;
+    let nome = undefined;
+    let nascimento = undefined;
+    let documento = undefined;
+
+
+    let query = `INSERT INTO atleta(id, usuario, nome, nascimento, documento) VALUES();`
+
+    connection.query(query, (err, results, fields) => {
+        console.log(err)
+        console.log(results)
+        console.log(fields)
+
+        if(err == null){
+            res.json(results)
+        }else{
+            res.send('ERROR')
+        }
+    })
+
 
 })
 
 
 // CAVALO ENDPOINTS
 
-app.post('/', (req, res) =>{
+app.post('/cavalo', (req, res) =>{
 
 })
 
 
 // ENTIDADE ENDPOINTS
 
-app.post('/', (req, res) =>{
+app.post('/entidade', (req, res) =>{
 
 })
 
 
 // INSCRICAO ENDPOINTS
 
-app.post('/', (req, res) =>{
+app.post('/inscricao', (req, res) =>{
 
 })
 
 
 // EVENTO ENDPOINTS
 
-app.post('/', (req, res) =>{
+app.post('/evento', (req, res) =>{
 
 })
 
 
 // DIA ENDPOINTS
 
-app.post('/', (req, res) =>{
+app.post('/dia', (req, res) =>{
 
 })
 
 
 // ALTURA ENDPOINTS
 
-app.post('/', (req, res) =>{
+app.post('/altura', (req, res) =>{
 
 })
 
@@ -80,7 +102,7 @@ app.post('/', (req, res) =>{
 
 // CATEGORIA ENDPOINTS
 
-app.post('/', (req, res) =>{
+app.post('/categoria', (req, res) =>{
 
 })
 
