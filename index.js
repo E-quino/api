@@ -4,6 +4,7 @@ const app = express()
 
 const PORT = process.env.PORT || 8080
 
+//
 
 // MYSQL DATABASE CONNECTION
 const mysql = require('mysql2')
