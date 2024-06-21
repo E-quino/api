@@ -30,7 +30,7 @@ app.post('/', (req, res) =>{
 
 // ATLETA ENDPOINTS
 
-app.post('/atleta', (req, res) =>{
+app.post('/atleta', async (req, res) =>{
 
     let id =  undefined;
     let userID = undefined;
@@ -39,21 +39,16 @@ app.post('/atleta', (req, res) =>{
     let documento = undefined;
 
 
-    let query = `INSERT INTO atleta(id, usuario, nome, nascimento, documento) VALUES();`
+    let query = `INSERT INTO atleta(?, ?, ?, ?, ?) VALUES();`
 
-    connection.query(query, (err, results, fields) => {
-        console.log(err)
-        console.log(results)
-        console.log(fields)
-
-        if(err == null){
-            res.json(results)
-        }else{
-            res.send('ERROR')
-        }
-    })
+    const output = await connection.query(query, id, userID, nome, nascimento, documento)
 
 
+    console.log(err)
+    console.log(results)
+    console.log(fields)
+
+    
 })
 
 
