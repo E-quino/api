@@ -1,5 +1,3 @@
-Claro! Aqui está a documentação dos endpoints em português brasileiro, formatada para o markdown do GitHub.
-
 ---
 
 # Documentação da API
