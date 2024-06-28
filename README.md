@@ -434,9 +434,7 @@ Cria uma nova categoria.
     "id": 1,
     "nome": "Nome da Categoria"
 }
-``
-
-`
+```
 
 ---
 
