@@ -1,3 +1,9 @@
+### Repositorios do Projeto
+
+- Frontend: 
+- API: https://github.com/E-quino/api
+- Banco de Dados: https://github.com/E-quino/database
+
 # Documentação da API
 
 ## Endpoints
