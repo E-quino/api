@@ -560,5 +560,3 @@ curl -X POST http://localhost:8080/categoria -H "Content-Type: application/json"
 ```
 
 ---
-
-Espero que isso cubra todas as suas necessidades de documentação. Se precisar de mais alguma coisa, estou à disposição!
