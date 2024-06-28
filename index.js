@@ -1,26 +1,27 @@
 // EXPRESS API SETUP
-const express = require('express')
-const app = express()
-const bodyParser = require('body-parser')
+const express = require('express');
+const app = express();
+const bodyParser = require('body-parser');
+const mysql = require('mysql2/promise');
 
-const PORT = process.env.PORT || 8080
+// Load environment variables from .env
+require('dotenv').config();
+
+const PORT = process.env.PORT || 8080;
+const pool = mysql.createPool({
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE
+});
 
 // Body Parsing Middleware
-app.use(bodyParser.json())
-
-// MYSQL DATABASE CONNECTION
-const mysql = require('mysql2/promise')
-
-const connection = mysql.createPool({
-    host: 'localhost',
-    user: 'root',
-    database: 'equino'
-})
+app.use(bodyParser.json());
 
 // Test Endpoint
 app.get('/ping', (req, res) => {
-    res.send('pong')
-})
+    res.send('pong');
+});
 
 // USUARIO ENDPOINTS (login)
 app.post('/', (req, res) => {
@@ -265,5 +266,5 @@ app.get('/atleta', async (req, res) => {
 })
 
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`)
-})
+    console.log(`Server is running on port ${PORT}`);
+});
