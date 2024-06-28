@@ -1,5 +1,3 @@
----
-
 # Documentação da API
 
 ## Endpoints
@@ -556,5 +554,3 @@ curl -X POST http://localhost:8080/categoria -H "Content-Type: application/json"
     "nome": "Nome da Categoria"
 }'
 ```
-
----
