@@ -5,6 +5,8 @@
 - Banco de Dados: https://github.com/E-quino/database
 
 # Documentação da API
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FE-quino%2Fapi.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FE-quino%2Fapi?ref=badge_shield)
+
 
 ## Endpoints
 
@@ -558,3 +560,7 @@ curl -X POST http://localhost:8080/categoria -H "Content-Type: application/json"
     "nome": "Nome da Categoria"
 }'
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FE-quino%2Fapi.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FE-quino%2Fapi?ref=badge_large)
